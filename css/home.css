@@ -95,31 +95,46 @@ body{
 
 
 .menuWrap{
-    height: 45px;
+    height: 50px;
     border: 2px solid #E4E4E4;
     border-radius: 40px;
     backdrop-filter: blur(4px);
-    grid-row: 6;
+    grid-row: 5;
     grid-column: 1/span 6;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 50px 0px 50px;
+    padding: 0px 30px 0px 30px;
+    object-fit: cover;
+    margin: 0px 20px 0px 20px;
+}
+
+.iconHolder>img{
+    height: 40px;
+}
+
+.iconHolder{
+    height: 50px;
+    object-fit: cover;
+    width: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .verticalMenuWrap{
     margin-right: 0px;
-    width: 45px;
+    width: 50px;
     border: 2px solid #E4E4E4;
     border-radius: 40px;
     backdrop-filter: blur(4px);
-    grid-row: 2/span 3;
+    grid-row: 2/span 2.5;
     grid-column: 6;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0px 50px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 
@@ -144,7 +159,7 @@ body{
 }
 
 .logo{
-    grid-row: 1;
+    grid-row: 1/ span2;
     grid-column: 1/span 6;
     overflow: hidden;
     display: flex;
@@ -161,3 +176,72 @@ body{
 .typo>img{
     width: 130px;
 }
+
+.transactionHolder{
+    height: 80px;
+    grid-column: 1/span 6;
+    border: 1px solid blue;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    margin-bottom: 30px;
+}
+
+.transactionPicture{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transactionImage{
+    height: 60px;
+}
+
+.transactionAmount{
+    width: 80px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transactionAmount>p{
+    margin: 0px;
+}
+
+.transactionDetails{
+    width: 130px;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.transactionType{
+    font-size: 14px;
+    color: greenyellow;
+}
+
+.transactionAccount{
+    font-size: 14px;
+}
+
+.transactionTime{
+    font-size: 10px;
+    color: greenyellow;
+}
+
+.transactionDetails>p{
+    padding: 0px;
+    margin: 0px;
+}
+
